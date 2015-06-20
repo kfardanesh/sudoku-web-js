@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+<title>
+Sudoku
+</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="game.js"></script>
+</head>
+<body onload="init();">
+<center>
+<div class='header'>
+Sudoku
+</div>
+<div id="board">
+</div>
+<div id='numbers'>
+</div>
+<div id="UI">
+<button onclick="newGame();">New Game</button>
+<input type="radio" name='difficulty' id="diff_easy" value='easy'> Easy
+<input type="radio" name='difficulty' id="diff_med" value='medium' checked> Medium 
+<input type="radio" name='difficulty' id="diff_hard" value='hard'> Hard
+<input type="radio" name='difficulty' id="diff_exp" value='exp'> Expert
+<div id="creatorOpt">
+<button onclick='clearBoard();'>Clear Board</button>
+<button onclick='generate();'>Generate New Board</button>
+<button onclick='checkBoard();'>Validate Board</button>
+<button onclick='solve();'>Solve</button>
+</div>
+</div>
+<div id="test">
+</div>
+<div id='footer'>
+<hr>
+<h5>&copy; <?php echo date("Y") ?> Kamran Fardanesh</h5>
+</div>
+</center>
+</body>
+</html>
